@@ -116,7 +116,7 @@ class YANCLMSTUDIO:
                 chat = lms.Chat()
                 chat.add_user_message(
                     prompt, images=[image_handle])
-                result = model.respond(chat)
+                result = str(model.respond(chat))
                 reasoning = result
 
             if unload_llm:
